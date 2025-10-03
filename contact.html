@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- 宣告這是一份 HTML5 文件 -->
+
+<html lang="zh-Hant"> <!-- 指定此頁面使用繁體中文 -->
+
+<head>
+    <meta charset="UTF-8"> <!-- 設定文件的編碼為 UTF-8，支援中文 -->
+    <title>OOO 公司 - 聯絡我們</title> <!-- 瀏覽器分頁上的標題 -->
+    <link rel="stylesheet" href="style.css"> <!-- 引入外部的 CSS 檔案 -->
+</head>
+
+<body> <!-- 網頁主體開始 -->
+
+    <!-- 頁首 header，通常包含網站 Logo 與導覽列 -->
+    <header>
+        <nav> <!-- 導覽列 -->
+            <a href="index.html">首頁</a> <!-- 超連結到首頁 -->
+            <a href="about.html">關於我們</a> <!-- 超連結到關於我們 -->
+            <a href="contact.html">聯絡我們</a> <!-- 本頁 -->
+            <a href="junan.html">自我介紹</a>
+        </nav>
+    </header>
+
+    <!-- 主內容 main -->
+    <main>
+        <h1>聯絡我們</h1> <!-- 主標題 -->
+
+        <!-- 聯絡表單 -->
+        <form>
+            <!-- 輸入姓名 -->
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+
+            <!-- 輸入電子郵件 -->
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+
+            <!-- 留言欄位 -->
+            <label for="message">留言：</label><br>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+            <br><br>
+
+            <!-- 提交按鈕 -->
+            <button type="submit">送出</button>
+        </form>
+    </main>
+
+    <!-- 頁尾 footer -->
+    <footer>
+        <p>© 2025 OOO Company. All rights reserved.</p> <!-- 版權資訊 -->
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* ===== 整體頁面設定（讓 footer 永遠貼底） ===== */
+html, body {
+    height: 100%;                            /* 滿版高度，讓 footer 可以黏在最底部 */
+    margin: 0;                               /* 移除預設外距 */
+    padding: 0;                              /* 移除預設內距 */
+    display: flex;                           /* 使用 flex 排版 */
+    flex-direction: column;                 /* 垂直排列（header → main → footer） */
+    font-family: "Noto Sans TC", sans-serif; /* 使用思源黑體字型，適合中文 */
+    background-color: #fff;                  /* 頁面背景色為白色 */
+    color: #333;                             /* 主要文字顏色為深灰 */
+}
+
+/* ===== 頁首區塊 header ===== */
+header {
+    background-color: #fcd34d;              /* 淡黃色背景 */
+    padding: 20px;                          /* 四周內距 */
+    text-align: center;                     /* 內容置中 */
+}
+
+/* ===== 導覽列連結樣式 nav a ===== */
+nav a {
+    margin: 0 15px;                         /* 左右間距 */
+    text-decoration: none;                 /* 移除底線 */
+    color: #1d4ed8;                         /* 藍色文字（hover 時可補變化） */
+}
+
+/* ===== 主內容區塊 main ===== */
+main {
+    flex: 1;                                /* 撐開所有可用空間，讓 footer 貼底 */
+    padding: 30px;                          /* 四周內距 */
+}
+
+/* ===== 主標題樣式 h1 ===== */
+h1 {
+    color: #111827;                         /* 更深的灰色文字，突顯標題 */
+}
+
+/* ===== 圖片樣式 img ===== */
+img {
+    display: block;                         /* 變成區塊元素 */
+    max-width: 100%;                        /* 圖片不會超過容器寬度 */
+    height: auto;                           /* 高度自動等比例縮放 */
+    margin: 20px auto;                      /* 垂直間距 + 水平置中 */
+    border-radius: 10px;                    /* 圓角邊框 */
+}
+
+/* ===== 表單欄位（input、textarea） ===== */
+form input,
+form textarea {
+    width: 100%;                            /* 滿版寬度 */
+    padding: 10px;                          /* 內距 */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;                 /* 淺灰邊框 */
+    border-radius: 5px;                     /* 圓角邊框 */
+    box-sizing: border-box;                 /* 包含 padding 不超出寬度 */
+}
+
+/* ===== 表單按鈕樣式 ===== */
+form button {
+    padding: 10px 20px;                     /* 上下 10px、左右 20px 的內距 */
+    background-color: #f59e0b;              /* 橘色背景 */
+    color: white;                           /* 白色文字 */
+    border: none;                           /* 移除邊框 */
+    border-radius: 5px;                     /* 圓角 */
+    cursor: pointer;                        /* 滑鼠變成小手指 */
+}
+
+/* ===== 頁尾 footer ===== */
+footer {
+    background-color: #fde68a;              /* 更淡的黃色背景 */
+    text-align: center;                     /* 置中對齊 */
+    padding: 20px;                          /* 四周內距 */
+}
